@@ -64,7 +64,7 @@ The library requires `F_CPU` to match your microcontroller’s clock frequency (
 - Include the library: `#include "debugSerial.h"`
 - Initialize UART1 with `debugSerialBegin(9600)`
 - Use print functions (e.g., `debugPrintln("Hello")`).
-- See the `examples/DebugExample/main.c` for a sample program.
+- See the `examples/debugExample/main.c` for a sample program.
 
 ## Adapting for ATmega328P
 
