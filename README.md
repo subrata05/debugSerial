@@ -59,6 +59,13 @@ The library requires `F_CPU` to match your microcontroller’s clock frequency (
 #include "debugSerial.h"
 ```
 
+### Step 4: Use the Library
+
+- Include the library: `#include "debugSerial.h"`
+- Initialize UART1 with `debugSerialBegin(9600)`
+- Use print functions (e.g., `debugPrintln("Hello")`).
+- See the `examples/DebugExample/main.c` for a sample program.
+
 ## Adapting for ATmega328P
 
 The ATmega328PB has two UARTs (UART0 and UART1), but the ATmega328P has only one (UART0). To use this library with ATmega328P:
@@ -79,4 +86,3 @@ The ATmega328PB has two UARTs (UART0 and UART1), but the ATmega328P has only one
 
 - **Transmit-Only:** The library does not support receiving data.
 - **UART1-Specific:** Designed for ATmega328PB’s UART1. Modification required for other UARTs or microcontrollers.
-- **Buffer Size:** Fixed at 100 bytes. Overflows are silently ignored.
